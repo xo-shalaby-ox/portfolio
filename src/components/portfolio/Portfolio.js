@@ -1,11 +1,20 @@
 import React, { useState } from "react";
+// import PortfolioImg from "../../assets/weather.jpg";
+// import PortfolioImg1 from "../../assets/TodoList.png";
+// import PortfolioImg2 from "../../assets/portfolio.jpg";
+// import PortfolioImg3 from "../../assets/siut.jpg";
+// import PortfolioImg4 from "../../assets/black.jpg";
+// import PortfolioImg5 from "../../assets/food.jpg";
+
+import portfolioVid from "../../assets/portfolio-vid.mp4";
+import todoListVid from "../../assets/todolist-vid.mp4";
+import weatherVid from "../../assets/weather-vid.mp4";
+import blackGymVid from "../../assets/black-vid.mp4";
+import foodVid from "../../assets/food-vid.mp4";
+import suitVid from "../../assets/suit-vid.mp4";
+import EcommerceVid from "../../assets/e-commerce-vid.mp4";
 import "./Portfolio.css";
-import PortfolioImg from "../../assets/weather.jpg";
-import PortfolioImg1 from "../../assets/TodoList.png";
-import PortfolioImg2 from "../../assets/portfolio.jpg";
-import PortfolioImg3 from "../../assets/siut.jpg";
-import PortfolioImg4 from "../../assets/black.jpg";
-import PortfolioImg5 from "../../assets/food.jpg";
+
 export const Portfolio = () => {
   const [toggleStates, setToggleStates] = useState(0);
   const toggleTabs = (e) => {
@@ -18,18 +27,25 @@ export const Portfolio = () => {
       <div className="portfolio__container container grid">
         <div className="portfolio__content">
           <div className="portfolio__box">
-            <img
-              src={PortfolioImg}
-              className="portfolio__pic"
-              onClick={() => toggleTabs(1)}
-            />
+            <div className="portfolio__pic">
+              <video
+                className="portfolio__pic-img"
+                src={weatherVid}
+                autoPlay
+                loop
+              ></video>
+            </div>
             <p className="portfolio__title">Weather App</p>
+            <h2 className="portfolio__text" onClick={() => toggleTabs(1)}>
+              - Show Details
+            </h2>
             <a
               href="https://weather-self-nine.vercel.app/"
               className="portfolio__link"
               target="_blank"
+              rel="noopener noreferrer"
             >
-              <button className="portfolio__btn">Check More</button>
+              <button className="portfolio__btn">View Project</button>
             </a>
           </div>
           <div
@@ -82,18 +98,25 @@ export const Portfolio = () => {
         </div>
         <div className="portfolio__content">
           <div className="portfolio__box">
-            <img
-              src={PortfolioImg1}
-              className="portfolio__pic"
-              onClick={() => toggleTabs(2)}
-            />
+            <div className="portfolio__pic">
+              <video
+                className="portfolio__pic-img"
+                src={todoListVid}
+                autoPlay
+                loop
+              ></video>
+            </div>
             <p className="portfolio__title">Todo List</p>
+            <h2 className="portfolio__text" onClick={() => toggleTabs(2)}>
+              - Show Details
+            </h2>
             <a
               href="https://todo-list-bice-ten.vercel.app/"
               className="portfolio__link"
               target="_blank"
+              rel="noopener noreferrer"
             >
-              <button className="portfolio__btn">Check More</button>
+              <button className="portfolio__btn">View Project</button>
             </a>
           </div>
           <div
@@ -139,14 +162,25 @@ export const Portfolio = () => {
         </div>
         <div className="portfolio__content">
           <div className="portfolio__box">
-            <img
-              src={PortfolioImg2}
-              className="portfolio__pic"
-              onClick={() => toggleTabs(3)}
-            />
+            <div className="portfolio__pic">
+              <video
+                className="portfolio__pic-img"
+                src={portfolioVid}
+                autoPlay
+                loop
+              ></video>
+            </div>
             <p className="portfolio__title">Portfolio</p>
-            <a href="" className="portfolio__link" target="_blank">
-              <button className="portfolio__btn">Check More</button>
+            <h2 className="portfolio__text" onClick={() => toggleTabs(3)}>
+              - Show Details
+            </h2>
+            <a
+              href="https://portfolio-nine-tawny-14.vercel.app/"
+              className="portfolio__link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="portfolio__btn">View Project</button>
             </a>
           </div>
           <div
@@ -207,18 +241,25 @@ export const Portfolio = () => {
         </div>
         <div className="portfolio__content">
           <div className="portfolio__box">
-            <img
-              src={PortfolioImg3}
-              className="portfolio__pic"
-              onClick={() => toggleTabs(4)}
-            />
+            <div className="portfolio__pic">
+              <video
+                className="portfolio__pic-img"
+                src={suitVid}
+                autoPlay
+                loop
+              ></video>
+            </div>
             <p className="portfolio__title">Suit App</p>
+            <h2 className="portfolio__text" onClick={() => toggleTabs(4)}>
+              - Show Details
+            </h2>
             <a
               href="https://1998mohamed.github.io/mo-suit/?fbclid=IwAR3G1IC9gb7j2eiDRCXrt535yfKr3JKnt0ExLv5VAqr3Mw2c3tYZZVR3h4U"
               className="portfolio__link"
               target="_blank"
+              rel="noopener noreferrer"
             >
-              <button className="portfolio__btn">Check More</button>
+              <button className="portfolio__btn">View Project</button>
             </a>
           </div>
           <div
@@ -268,18 +309,25 @@ export const Portfolio = () => {
         </div>
         <div className="portfolio__content">
           <div className="portfolio__box">
-            <img
-              src={PortfolioImg4}
-              className="portfolio__pic"
-              onClick={() => toggleTabs(5)}
-            />
+            <div className="portfolio__pic">
+              <video
+                className="portfolio__pic-img"
+                src={blackGymVid}
+                autoPlay
+                loop
+              ></video>
+            </div>
             <p className="portfolio__title">Black GYM</p>
+            <h2 className="portfolio__text" onClick={() => toggleTabs(5)}>
+              - Show Details
+            </h2>
             <a
               href="https://black-gym-eta.vercel.app/"
               className="portfolio__link"
               target="_blank"
+              rel="noopener noreferrer"
             >
-              <button className="portfolio__btn">Check More</button>
+              <button className="portfolio__btn">View Project</button>
             </a>
           </div>
           <div
@@ -332,18 +380,25 @@ export const Portfolio = () => {
         </div>
         <div className="portfolio__content">
           <div className="portfolio__box">
-            <img
-              src={PortfolioImg5}
-              className="portfolio__pic"
-              onClick={() => toggleTabs(6)}
-            />
+            <div className="portfolio__pic">
+              <video
+                className="portfolio__pic-img"
+                src={foodVid}
+                autoPlay
+                loop
+              ></video>
+            </div>
             <p className="portfolio__title">Food Resturant</p>
+            <h2 className="portfolio__text" onClick={() => toggleTabs(6)}>
+              - Show Details
+            </h2>
             <a
               href="https://1998mohamed.github.io/?fbclid=IwAR1pfkZbMXtU-bRc4Kxh1sOVQhVe2lBh8W9t2xSYKaJkAEFExQ9XWeSVBCw#"
               className="portfolio__link"
               target="_blank"
+              rel="noopener noreferrer"
             >
-              <button className="portfolio__btn">Check More</button>
+              <button className="portfolio__btn">View Project</button>
             </a>
           </div>
           <div
@@ -358,7 +413,7 @@ export const Portfolio = () => {
                 onClick={() => toggleTabs(0)}
                 className="uil uil-times portfolio__modal-close"
               ></i>
-              <h3 className="portfolio__modal-title">Pizza Resturant</h3>
+              <h3 className="portfolio__modal-title">Food Resturant</h3>
               <p className="portfolio__modal-description">
                 Wep App built with React JS FrameWork
               </p>
@@ -366,15 +421,82 @@ export const Portfolio = () => {
                 <li className="portfolio__modal-portfolio">
                   <i className="uil uil-check-circle portfolio__modal-icon"></i>
                   <p className="portfolio__modal-info">
-                    It display collection of pizza and desserts .
+                    It display collection of food and desserts .
                   </p>
                 </li>
 
                 <li className="portfolio__modal-portfolio">
                   <i className="uil uil-check-circle portfolio__modal-icon"></i>
                   <p className="portfolio__modal-info">
-                    List containing details about each type of pizza and
+                    List containing details about each type of food and
                     desserts.
+                  </p>
+                </li>
+
+                <li className="portfolio__modal-portfolio">
+                  <i className="uil uil-check-circle portfolio__modal-icon"></i>
+                  <p className="portfolio__modal-info">
+                    It provides a way to place an order and choose the item you
+                    need.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="portfolio__content">
+          <div className="portfolio__box">
+            <div className="portfolio__pic">
+              <video
+                className="portfolio__pic-img"
+                src={EcommerceVid}
+                autoPlay
+                loop
+              ></video>
+            </div>
+            <p className="portfolio__title">E Commerce</p>
+            <h2 className="portfolio__text" onClick={() => toggleTabs(6)}>
+              - Show Details
+            </h2>
+            <a
+              href="https://1998mohamed.github.io/?fbclid=IwAR1pfkZbMXtU-bRc4Kxh1sOVQhVe2lBh8W9t2xSYKaJkAEFExQ9XWeSVBCw#"
+              className="portfolio__link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="portfolio__btn">View Project</button>
+            </a>
+          </div>
+          <div
+            className={
+              toggleStates === 6
+                ? "portfolio__modal active-modal"
+                : "portfolio__modal"
+            }
+          >
+            <div className="portfolio__modal-content">
+              <i
+                onClick={() => toggleTabs(0)}
+                className="uil uil-times portfolio__modal-close"
+              ></i>
+              <h3 className="portfolio__modal-title">E Commerce</h3>
+              <p className="portfolio__modal-description">
+                Wep App built with React JS FrameWork
+              </p>
+              <ul className="portfolio__modal-portfolios grid">
+                <li className="portfolio__modal-portfolio">
+                  <i className="uil uil-check-circle portfolio__modal-icon"></i>
+                  <p className="portfolio__modal-info">
+                    It display collection of clothes, machines and phones for
+                    men, woman and childrens .
+                  </p>
+                </li>
+
+                <li className="portfolio__modal-portfolio">
+                  <i className="uil uil-check-circle portfolio__modal-icon"></i>
+                  <p className="portfolio__modal-info">
+                    List containing details about each type of clothes and
+                    shoses.
                   </p>
                 </li>
 

@@ -1,5 +1,5 @@
 .portfolio__container {
-  grid-template-columns: repeat(2, 350px);
+  grid-template-columns: repeat(2, 450px);
   column-gap: 1.5rem;
   justify-content: center;
 }
@@ -8,10 +8,9 @@
   background-color: var(--container-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 1.5rem 2rem;
-  width: 350px;
+  width: 450px;
   border-radius: 1.25rem;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 3px 8px -2px;
 }
 .portfolio__modal {
   position: fixed;
@@ -86,20 +85,29 @@
   row-gap: 1rem;
 }
 .portfolio__pic {
-  width: 300px;
-  height: 235px;
+  width: 400px;
+  height: 400px;
   border-radius: 1rem;
   cursor: pointer;
 }
-.portfolio__pic:hover {
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
-    rgba(0, 0, 0, 0.22) 0px 15px 12px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+.portfolio__pic-img{
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  object-fit: cover;
 }
 .portfolio__title {
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
   margin-bottom: var(--mb-1-5);
+}
+.portfolio__text{
+  font-size: 1rem;
+  color: var(--text-color);
+  cursor: pointer;
+}
+.portfolio__text:hover{
+  color: var(--title-color-dark);
 }
 .portfolio__link {
   width: 120px;
@@ -111,6 +119,7 @@
   height: 40px;
   color: var(--title-color-dark);
   border-radius: 1rem;
+  transition: .5s;
 }
 .portfolio__btn:hover {
   background-color: var(--title-color);

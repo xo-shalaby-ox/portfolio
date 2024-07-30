@@ -32,6 +32,7 @@ export const Contacts = () => {
                 href="mailto:mcoding98@gmail.com?subject=Your%20Subject&body=Your%20Message"
                 className="contact__button"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 Write Me
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
@@ -42,10 +43,10 @@ export const Contacts = () => {
               <h3 className="contact__card-title">Whatsapp</h3>
               <span className="contact__card-data">01001028922</span>
               <a
-                href="https://api.whatsapp.com/send?phone=1001028922&text=Hello%2C%20I%27d%20like%20to%20chat%20with%20you.
-                "
+                href="https://wa.me/01001028922"
                 className="contact__button"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 Write Me
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
@@ -59,6 +60,7 @@ export const Contacts = () => {
                 href="https://www.messenger.com/t/100015501584776/"
                 className="contact__button"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 Write Me
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
