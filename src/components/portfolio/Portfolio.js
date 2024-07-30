@@ -1,11 +1,4 @@
 import React, { useState } from "react";
-// import PortfolioImg from "../../assets/weather.jpg";
-// import PortfolioImg1 from "../../assets/TodoList.png";
-// import PortfolioImg2 from "../../assets/portfolio.jpg";
-// import PortfolioImg3 from "../../assets/siut.jpg";
-// import PortfolioImg4 from "../../assets/black.jpg";
-// import PortfolioImg5 from "../../assets/food.jpg";
-
 import portfolioVid from "../../assets/portfolio-vid.mp4";
 import todoListVid from "../../assets/todolist-vid.mp4";
 import weatherVid from "../../assets/weather-vid.mp4";

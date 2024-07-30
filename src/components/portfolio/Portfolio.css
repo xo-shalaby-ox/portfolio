@@ -144,7 +144,7 @@
 
 @media screen and (max-width: 576px) {
   .portfolio__container {
-    grid-template-columns: max-content;
+    grid-template-columns: repeat(1,300px);
     justify-content: center;
   }
   .portfolio__content {
@@ -153,17 +153,18 @@
   }
   .portfolio__pic {
     width: 200px;
-    height: 150;
+    height: 200px;
+  }
+  .portfolio__pic-img{
+    object-fit: cover;
   }
 }
 /* For small devices */
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 360px) {
+
   .portfolio__content {
     width: 280px;
     border-radius: 1.25rem;
   }
-  .portfolio__pic {
-    width: 220px;
-    height: 150;
-  }
+ 
 }
