@@ -439,14 +439,14 @@ export const Portfolio = () => {
               ></i>
               <h3 className="portfolio__modal-title">E Commerce</h3>
               <p className="portfolio__modal-description">
-                Wep App built with React JS FrameWork
+                Wep App built with React JS.
               </p>
               <ul className="portfolio__modal-portfolios grid">
                 <li className="portfolio__modal-portfolio">
                   <i className="uil uil-check-circle portfolio__modal-icon"></i>
                   <p className="portfolio__modal-info">
-                    It display collection of clothes, machines and phones for
-                    men, woman and childrens .
+                    List types of clothes, suits, accessories, machines, and
+                    phones for men and women.
                   </p>
                 </li>
 
@@ -461,8 +461,33 @@ export const Portfolio = () => {
                 <li className="portfolio__modal-portfolio">
                   <i className="uil uil-check-circle portfolio__modal-icon"></i>
                   <p className="portfolio__modal-info">
-                    It provides a way to place an order and choose the item you
-                    need.
+                    Provides item’s price and colors and ability to add item to
+                    your cart.
+                  </p>
+                </li>
+
+                <li className="portfolio__modal-portfolio">
+                  <i className="uil uil-check-circle portfolio__modal-icon"></i>
+                  <p className="portfolio__modal-info">
+                    List all items that you choose in your cart and provide the
+                    total price of all item and ability to remove any item from
+                    your cart and place order.
+                  </p>
+                </li>
+
+                <li className="portfolio__modal-portfolio">
+                  <i className="uil uil-check-circle portfolio__modal-icon"></i>
+                  <p className="portfolio__modal-info">
+                    Users can contact with us by chating on gmail, messenger,
+                    and whatsapp.
+                  </p>
+                </li>
+
+                <li className="portfolio__modal-portfolio">
+                  <i className="uil uil-check-circle portfolio__modal-icon"></i>
+                  <p className="portfolio__modal-info">
+                    Provides the users to browse with us through facebook,
+                    tiktok, and Instagram.
                   </p>
                 </li>
               </ul>
