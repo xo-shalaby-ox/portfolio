@@ -86,7 +86,7 @@
 }
 .portfolio__pic {
   width: 400px;
-  height: 400px;
+  height: 270px;
   border-radius: 1rem;
   cursor: pointer;
 }
@@ -153,7 +153,7 @@
   }
   .portfolio__pic {
     width: 200px;
-    height: 200px;
+    height: 150px;
   }
   .portfolio__pic-img{
     object-fit: contain;

@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import portfolioVid from "../../assets/portfolio-vid.mp4";
-import todoListVid from "../../assets/todolist-vid.mp4";
-import weatherVid from "../../assets/weather-vid.mp4";
-import blackGymVid from "../../assets/black-vid.mp4";
-import foodVid from "../../assets/food-vid.mp4";
-import suitVid from "../../assets/suit-vid.mp4";
-import EcommerceVid from "../../assets/e-commerce-vid.mp4";
+import weatherpic from "../../assets/weather-app.PNG";
+import todoListpic from "../../assets/todoList-app.PNG";
+import portfoliopic from "../../assets/portfolio-app.PNG";
+import suitpic from "../../assets/suit-app.PNG";
+import gymapppic from "../../assets/gym-app.PNG";
+import foodApppic from "../../assets/food-app.PNG";
+import Ecommercepic from "../../assets/e-commerce-app.PNG";
 import "./Portfolio.css";
 
 export const Portfolio = () => {
@@ -21,12 +21,7 @@ export const Portfolio = () => {
         <div className="portfolio__content">
           <div className="portfolio__box">
             <div className="portfolio__pic">
-              <video
-                className="portfolio__pic-img"
-                src={weatherVid}
-                autoPlay
-                loop
-              ></video>
+              <img src={weatherpic} alt="pic" />
             </div>
             <p className="portfolio__title">Weather App</p>
             <h2 className="portfolio__text" onClick={() => toggleTabs(1)}>
@@ -92,12 +87,7 @@ export const Portfolio = () => {
         <div className="portfolio__content">
           <div className="portfolio__box">
             <div className="portfolio__pic">
-              <video
-                className="portfolio__pic-img"
-                src={todoListVid}
-                autoPlay
-                loop
-              ></video>
+              <img src={todoListpic} alt="pic" />
             </div>
             <p className="portfolio__title">Todo List</p>
             <h2 className="portfolio__text" onClick={() => toggleTabs(2)}>
@@ -156,12 +146,7 @@ export const Portfolio = () => {
         <div className="portfolio__content">
           <div className="portfolio__box">
             <div className="portfolio__pic">
-              <video
-                className="portfolio__pic-img"
-                src={portfolioVid}
-                autoPlay
-                loop
-              ></video>
+              <img src={portfoliopic} alt="pic" />
             </div>
             <p className="portfolio__title">Portfolio</p>
             <h2 className="portfolio__text" onClick={() => toggleTabs(3)}>
@@ -235,12 +220,7 @@ export const Portfolio = () => {
         <div className="portfolio__content">
           <div className="portfolio__box">
             <div className="portfolio__pic">
-              <video
-                className="portfolio__pic-img"
-                src={suitVid}
-                autoPlay
-                loop
-              ></video>
+              <img src={suitpic} alt="pic" />
             </div>
             <p className="portfolio__title">Suit App</p>
             <h2 className="portfolio__text" onClick={() => toggleTabs(4)}>
@@ -303,12 +283,7 @@ export const Portfolio = () => {
         <div className="portfolio__content">
           <div className="portfolio__box">
             <div className="portfolio__pic">
-              <video
-                className="portfolio__pic-img"
-                src={blackGymVid}
-                autoPlay
-                loop
-              ></video>
+              <img src={gymapppic} alt="pic" />
             </div>
             <p className="portfolio__title">Black GYM</p>
             <h2 className="portfolio__text" onClick={() => toggleTabs(5)}>
@@ -374,12 +349,7 @@ export const Portfolio = () => {
         <div className="portfolio__content">
           <div className="portfolio__box">
             <div className="portfolio__pic">
-              <video
-                className="portfolio__pic-img"
-                src={foodVid}
-                autoPlay
-                loop
-              ></video>
+              <img src={foodApppic} alt="pic" />
             </div>
             <p className="portfolio__title">Food Resturant</p>
             <h2 className="portfolio__text" onClick={() => toggleTabs(6)}>
@@ -440,12 +410,7 @@ export const Portfolio = () => {
         <div className="portfolio__content">
           <div className="portfolio__box">
             <div className="portfolio__pic">
-              <video
-                className="portfolio__pic-img"
-                src={EcommerceVid}
-                autoPlay
-                loop
-              ></video>
+              <img src={Ecommercepic} alt="pic" />
             </div>
             <p className="portfolio__title">E Commerce</p>
             <h2 className="portfolio__text" onClick={() => toggleTabs(6)}>
